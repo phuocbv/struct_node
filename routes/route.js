@@ -1,0 +1,3 @@
+modul.export = (app) => {
+    app('')
+};
