@@ -9,6 +9,19 @@ var getUser = (req, res) => {
     });
 }
 
+var getListUser = (req, res) => {
+    var conditions = {};
+    user_repository.searchUser(conditions).then((users) => {
+        console.log(users);
+        res.render('user/index', {
+            listUser: users
+        });
+    }).catch((err) => {
+        console.log(err);
+    });
+}
+
 module.exports = {
-    getUser
+    getUser,
+    getListUser
 };

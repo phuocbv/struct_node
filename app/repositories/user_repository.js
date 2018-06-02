@@ -9,6 +9,16 @@ var getUser = () => {
     });
 }
 
+var searchUser = (param = {}) => {
+    return new Promise((resolve, reject) => {
+        user.find(param, (err, result) => {
+            if (err) reject(err);
+            resolve(result);
+        });
+    });
+}
+
 module.exports = {
-    getUser
+    getUser,
+    searchUser
 };
