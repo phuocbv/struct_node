@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="nodeJS Template">
+    <meta name="author" content="DaCuoi1802">
+    <%- stylesheet('css/app.css') %>
+</head>
+
+<body>
+    <% include header.ejs %>
+    <div class="container">
+        <%- body %>
+    </div>
+    <% include footer.ejs %>
+</body>
+
+</html>

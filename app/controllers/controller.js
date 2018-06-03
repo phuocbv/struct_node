@@ -1,5 +1,7 @@
 var index = (req, res) => {
-    res.send('ok');
+    res.render('index', {
+        title: 'Home'
+    })
 }
 
 module.exports = {

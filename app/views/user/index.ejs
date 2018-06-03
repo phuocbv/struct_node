@@ -1,6 +1,7 @@
-index
+<% layout('../ejs/layout') -%>
+
 <% listUser.forEach((user) => { %>
     <li>
         <%= user._id %>
     </li>
-    <% }); %>
+<% }); %>
