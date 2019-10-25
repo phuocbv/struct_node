@@ -2,7 +2,7 @@
   "name": "rock",
   "author": "dacuoi1802",
   "vesion": "1.0",
-  "time": "2018",
+  "time": "2018-06",
   "dependencies": {
     "ect": "^0.5.9",
     "ejs": "^2.6.1",

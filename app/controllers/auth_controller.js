@@ -3,6 +3,7 @@ var getLogin = (req, res) => {
 }
 
 var postLogin = (req, res) => {
+    console.log(req.params);
     res.send(req.params);
 }
 

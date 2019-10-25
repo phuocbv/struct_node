@@ -2,8 +2,16 @@ var express = require('express');
 var config = require('./config/config');
 var path = require('path');
 var ect = require('ect');
+var bodyParser = require('body-parser');
+
+
 
 var app = express();
+
+
+// app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(bodyParser());
 var ectRenderer = ect({ watch: true, root: path.join(__dirname, '/app/views/'), ext: '.ect' });
 
 //load folder content file controller
